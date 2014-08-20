@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:	TabCategoryPosts
+Plugin Name:	Horizontal Tabs
 Plugin URI:
 Description:	Show posts from 3 selected categories 
 Version:	1.0
