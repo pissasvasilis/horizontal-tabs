@@ -190,9 +190,8 @@ endif;
 add_action('widgets_init','horizontal_tabs_register_widget');
 
 function horizontal_tabs_register_widget(){
-    register_widget(horizontal_tabs_widget);
+    register_widget('horizontal_tabs_widget');
 }
-
 
 function horizontalTabsScript(){
     wp_enqueue_script('jquery-ui-tabs');
@@ -201,8 +200,11 @@ function horizontalTabsScript(){
 add_action('wp_enqueue_scripts', 'horizontalTabsScript');
 
 function horizontalTabsCss(){
-$url = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css';
-    wp_register_style('jquery-ui-smoothness', $url);
+
+	wp_register_style('jquery-ui-structure', plugins_url('css/jquery-ui.structure.css',__FILE__));
+    wp_enqueue_style('jquery-ui-structure');
+	
+    wp_register_style('jquery-ui-smoothness', plugins_url('css/jquery-ui.smoothness.css',__FILE__));
     wp_enqueue_style('jquery-ui-smoothness');
     
     wp_register_style('htabsCss1', plugins_url('css/style.css',__FILE__));

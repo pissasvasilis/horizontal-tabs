@@ -11,8 +11,7 @@ Horizontal tabs plugin enable to show unlimited posts in 3 tabs
 
 == Description ==
 
-With horizontal tabs plugin you can add 3 tabs that each of them contains unlimited posts. Each tab shows the featured image and the title of
-each post
+With horizontal tabs plugin you can add 3 tabs that each of them contains unlimited posts. Each tab shows the featured image and the title of each post
 
 
 * option to select the category of post in each tab
